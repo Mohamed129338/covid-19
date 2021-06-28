@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,400;1,500&display=swap');
+
+*{
+margin: 0;
+padding:0;
+font-family: 'Ubuntu', sans-serif;
+word-spacing: 5px;
+}
+
+.navbar{
+height: 200px;
+background:url(https://i.pinimg.com/originals/5f/c6/1b/5fc61b7950164118f12a1fde2aeb2f4e.gif);	
+position: relative;
+text-align: center;
+display :block;
+}
+
+#logo{
+    width: 180px;
+    height: 90px;;
+}
+.buttons{
+margin:10px;
+display: inline-block;
+background-color:red;
+color:white;
+outline:white;
+border-radius: 10px;
+text-align: center;
+display: flex;
+}
+body {
+    margin:0;
+    min-height:100vh;
+    align-items:center;
+    justify-content:center;
+    font-family:Helvetica,Sans-serif;
+  }
+ 
+  .buttons {
+    display: inline-block;
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    border-radius:5px;
+    align-items:center;
+    justify-content:center;
+    text-transform:uppercase;
+    font-size:3vw;
+    font-weight:bold;
+  }
+  .buttons:after {
+    content:attr(alt);
+    align-items:center;
+    justify-content:center;
+  }
+  .buttons:hover {
+    animation:slidebg 2s linear infinite;
+  }
+  
+  @keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+}
